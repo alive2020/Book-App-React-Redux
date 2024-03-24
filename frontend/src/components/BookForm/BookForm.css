@@ -27,7 +27,7 @@
 }
 
 .book-form button {
-  background-color: #4361ee;
+  background-color: #b892ff;
   color: #fff;
   padding: 8px 12px;
   border: none;
@@ -39,23 +39,23 @@
 }
 
 .book-form button:hover {
-  background-color: #324cbc;
+  background-color: #a480cf;
 }
 
 .book-form .randBtn {
-  background-color: #4cc9f0;
+  background-color: #b892ff;
 }
 
 .book-form .randBtn:hover {
-  background-color: #389ab8;
+  background-color: #a480cf;
 }
 
 .book-form .apiBtn {
-  background-color: #4895ef;
+  background-color: #b892ff;
 }
 
 .book-form .apiBtn:hover {
-  background-color: #3a7bc6;
+  background-color: #a480cf;
 }
 
 .book-form .spinner {
