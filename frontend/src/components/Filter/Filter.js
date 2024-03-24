@@ -34,7 +34,7 @@ const Filter = () => {
   };
 
   return (
-    <div className="app-block filter">
+    <div className="filter">
       <div className="filter-row">
         <div className="filter-group">
           <input

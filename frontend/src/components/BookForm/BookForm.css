@@ -1,12 +1,21 @@
 .book-form {
   width: 100%;
+  padding: 20px;
+  margin: 20px;
+  color: white;
+}
+
+.book-form h2 {
+  text-align: left;
+  padding-left: 18px;
 }
 
 .book-form label {
   display: block;
   width: 100%;
-  text-align: center;
+  text-align: left;
   margin-bottom: 10px;
+  padding-left: 18px;
 }
 
 .book-form input {
@@ -18,7 +27,7 @@
 }
 
 .book-form button {
-  background-color: #007bff;
+  background-color: #4361ee;
   color: #fff;
   padding: 8px 12px;
   border: none;
@@ -26,10 +35,27 @@
   cursor: pointer;
   margin: 10px;
   transition: background-color 0.3s ease;
+  width: 85%;
 }
 
 .book-form button:hover {
-  background-color: #0056b3;
+  background-color: #324cbc;
+}
+
+.book-form .randBtn {
+  background-color: #4cc9f0;
+}
+
+.book-form .randBtn:hover {
+  background-color: #389ab8;
+}
+
+.book-form .apiBtn {
+  background-color: #4895ef;
+}
+
+.book-form .apiBtn:hover {
+  background-color: #3a7bc6;
 }
 
 .book-form .spinner {

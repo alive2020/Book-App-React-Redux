@@ -1,7 +1,12 @@
+.book-list {
+  min-height: 30vh;
+}
+
 .book-list ul {
   padding: 0;
   margin: 20px -20px;
   list-style: none;
+  font-size: 14px;
 }
 
 .book-list li {
@@ -10,23 +15,21 @@
   align-items: center;
   width: auto;
   padding: 10px 20px;
-  border-bottom: 1px solid #ccc;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
   background-color: #fff;
   list-style-type: none;
 }
 
-.book-list li:nth-child(even) {
-  background-color: #f2f2f2;
-}
-
 .book-list li:hover {
-  background-color: #dbe4f8;
+  background-color: #d0cee4;
 }
 
 .book-list button {
   background-color: #fff;
-  color: red;
-  border: 1px solid red;
+  color: #f72585;
+  border: 1px solid #f72585;
   padding: 8px 12px;
   border-radius: 3px;
   cursor: pointer;
@@ -57,5 +60,5 @@
   margin: 0 20px;
   cursor: pointer;
   transition: color 0.3s ease;
-  color: #fca510;
+  color: #7209b7;
 }

@@ -16,7 +16,7 @@ import { setError } from "../../redux/slices/errorSlice";
 const BookForm = () => {
   const [title, setTitle] = useState("");
   const [author, setAuthor] = useState("");
-  const [isLoading, setIsLoading] = useState(false);
+  // const [isLoading, setIsLoading] = useState(false);
   const isLoadingViaAPI = useSelector(selectIsLoadingViaAPI);
   const dispatch = useDispatch();
 
@@ -55,7 +55,7 @@ const BookForm = () => {
   };
 
   return (
-    <div className="app-block book-form">
+    <div className=" book-form">
       <h2>Add a New Book</h2>
       <form onSubmit={handleSubmit}>
         <div>
@@ -63,6 +63,7 @@ const BookForm = () => {
           <input
             type="text"
             id="title"
+            placeholder="Enter title"
             value={title}
             onChange={(e) => setTitle(e.target.value)}
           />
@@ -72,17 +73,18 @@ const BookForm = () => {
           <input
             type="text"
             id="author"
+            placeholder="Enter author"
             value={author}
             onChange={(e) => setAuthor(e.target.value)}
           />
         </div>
         <button type="submit">Add Book</button>
-        <button type="submit" onClick={handleAddRandomBook}>
+        <button type="submit" className="randBtn" onClick={handleAddRandomBook}>
           Add Random
         </button>
-
         <button
           type="submit"
+          className="apiBtn"
           onClick={handleAddRandomBookViaAPI}
           disabled={isLoadingViaAPI}
         >
