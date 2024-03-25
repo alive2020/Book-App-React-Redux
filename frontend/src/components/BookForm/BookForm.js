@@ -13,6 +13,8 @@ import "./BookForm.css";
 import createBookWithID from "../utils/createBookWithID";
 import { setError } from "../../redux/slices/errorSlice";
 
+const apiUrl = "https://book-app-demo.onrender.com/random-book";
+
 const BookForm = () => {
   const [title, setTitle] = useState("");
   const [author, setAuthor] = useState("");
@@ -45,7 +47,7 @@ const BookForm = () => {
 
   const handleAddRandomBookViaAPI = (e) => {
     e.preventDefault();
-    dispatch(fetchBook("http://localhost:4000/random-book"));
+    dispatch(fetchBook(apiUrl));
     // try {
     //   setIsLoading(true);
     //   await dispatch(fetchBook("http://localhost:4000/random-book"));
